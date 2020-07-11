@@ -1,0 +1,595 @@
+/*https://fontsfree.pro/base-web-fonts/sans-serif-grotesque/698-brandon-grotesque.html*/
+
+/*----Font Integration Start----*/
+@font-face{
+    src: url(../fonts/BrandonGrotesque-Light.ttf);
+    font-family: BrandonGrotesque-Light;
+}
+@font-face{
+    src: url(../fonts/BrandonGrotesque-Regular.ttf);
+    font-family: BrandonGrotesque-Regular;
+}
+@font-face{
+    src: url(../fonts/BrandonGrotesque-Medium.ttf);
+    font-family: BrandonGrotesque-Medium;
+}
+@font-face{
+    src: url(../fonts/BrandonGrotesque-Bold.ttf);
+    font-family: BrandonGrotesque-Bold;
+}
+/*----Font Integration End----*/
+
+/*----Common Design and Selectors Start----*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: BrandonGrotesque-Regular;
+    font-size: 18px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+/*    border: 1px solid green;*/
+}
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+/*    border: 1px solid red;*/
+}
+section{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+}
+/*----Common Design and Selectors End----*/
+
+
+
+/*----header design start----*/
+header{
+    padding: 50px 0 120px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/bg_banner.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/bg_banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/bg_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+/*    overflow: hidden;*/
+}
+.navigation_section{
+/*
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+*/
+}
+nav{
+    overflow: hidden;
+    
+/*    width: 100%;*/
+/*    border: 1px solid green;*/
+}
+.logo{
+    width: 10%;
+    float: left;
+/*    border: 1px solid red;*/
+}
+.logo img{
+    width: 100%;
+/*    border: 1px solid white;*/
+}
+.nav_links{
+    width: 60%;
+    float: right;
+/*    border: 1px solid red;*/
+}
+.nav_links ul{
+/*    width: 100%;*/
+    float: right;
+}
+.nav_links ul li{
+    float: left;
+    list-style: none;
+}
+.nav_links ul li a{
+    margin-right: 50px;
+    padding: 5px 0;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.nav_links ul li:last-child a{
+    margin-right: 0;
+}
+.nav_links ul li a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navigation_section nav .nav_links ul li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+}
+/*====Banner====*/
+.banner_section{
+    text-align: center;
+}
+.banner_section p{
+    margin-top: 160px;
+    font-family: BrandonGrotesque-Light;
+    font-size: 32px;
+    font-weight: 300;
+}
+.banner_section h1{
+    margin-top: 50px;
+    font-family: BrandonGrotesque-Bold;
+    font-size: 66px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner_section a{
+    margin-top: 80px;
+    padding: 20px 65px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    font-family: BrandonGrotesque-Bold;
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.banner_section a:hover{
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/*----header design end----*/
+
+
+/*----webdev_section design start----*/
+.webdev_section{}
+.web_text{
+    width: 60%;
+    float: left;
+/*    border: 1px solid red;*/
+}
+.com_section_title{
+    font-family: BrandonGrotesque-Light;
+    font-size: 60px;
+    font-weight: 300;
+    color: #222222;
+}
+.com_section_title span{
+    font-family: BrandonGrotesque-Bold;
+    font-size: 60px;
+    font-weight: 700;
+    color: #222222;
+}
+.service_p{
+    color: #777777;
+}
+.web_icon{
+    width: 18%;
+    float: right;
+/*    border: 1px solid red;*/
+    line-height: 300px;
+
+}
+.web_icon img{
+    width: 100%;
+    vertical-align: middle;
+}
+/*----webdev_section design end----*/
+
+
+/*----identity branding section design start----*/
+.id_branding_section{
+    background-color: #fafafa;
+}
+.brand_icon{
+    float: left;
+/*    border: 1px solid red;*/
+    line-height: 300px;
+}
+.brand_icon img{
+    width: 100%;
+    vertical-align: middle;
+}
+.brand_text{
+    width: 60%;
+    float: right;
+/*    border: 1px solid red;*/
+}
+/*----identity branding section design end----*/
+
+/*----service section design start----*/
+.service_section{}
+.left_column{
+    width: 45%;
+    float: left;
+}
+.right_column{
+    width: 45%;
+    float: right;
+}
+.service_div{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.skill_icon{
+    width: 13%;
+    float: left;
+}
+.skill_icon img{
+    width: 100%;
+}
+.skill{
+    width: 80%;
+    float: right;
+}
+.skill_title{
+    font-family: BrandonGrotesque-Medium;
+    font-size: 22px;
+    font-weight: 500;
+    color: #222222;
+}
+.service_div .service_p{}
+
+/*----service section design end----*/
+
+/*----client section design start----*/
+.client_section{
+    background-color: #fafafa;
+/*    border: 1px solid red;*/
+}
+.sec_title_box{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sec_mini_title{
+    margin-top: -10px;
+    font-size: 22px;
+    color: #777777;
+}
+.client{
+/*    border: 1px solid red;*/
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.client:last-child{
+    margin-bottom: 0;
+}
+.client_photo{
+    margin-left: 10%;
+    width: 15%;
+    float: left;
+}
+.client_photo2{
+    margin-left: 0;
+    margin-right: 10%;
+    float: right;
+}
+.client_photo img{
+    width: 100%;
+    border-radius: 50%;
+}
+.testimonial{
+    margin-right: 10%;
+    margin-top: 25px;
+    padding: 40px 80px;
+    width: 50%;
+    float: right;
+    background-color: #fff;
+    border: 2px solid #f3f3f3;
+    position: relative;
+}
+.testimonial2{
+    margin-right: 0;
+    margin-left: 10%;
+    padding: 40px 80px;
+    width: 50%;
+    float: left;
+    background-color: #fff;
+    border: 2px solid #f3f3f3;
+    position: relative;
+}
+.testimonial::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 0 0 #f3f3f3;
+            box-shadow: 2px 2px 0 0 #f3f3f3;
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+    left: -15px;
+    top: 75px;
+}
+.testimonial2::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 0 0 #f3f3f3;
+            box-shadow: 2px 2px 0 0 #f3f3f3;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    right: -15px;
+    top: 75px;
+}
+.c_comment{
+    font-size: 26px;
+    color: #777777;
+}
+.c_name{
+    font-size: 20px;
+    color: #7690c5;
+}
+/*----client section design end----*/
+
+/*----team section design start----*/
+.team_section{
+    background-color: #111111;
+    text-align: center;
+}
+.team_section .sec_title_box{}
+.team_section .sec_title_box .com_section_title,
+.team_section .sec_title_box .com_section_title span{
+    color: #fff;
+}
+.team_section .sec_title_box .sec_mini_title{}
+.team_members{
+    margin-top: 70px;
+    overflow: hidden;
+    text-align: center;
+}
+.member{
+    width: 33%;
+/*    margin: 0 %;*/
+    float: left;
+}
+.m_photo{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.m_photo img{
+    width: 100%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.m_name_post{}
+.m_name{
+    font-family: BrandonGrotesque-Bold;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+.m_post{
+    color: #ebebeb;
+}
+.m_icons{
+    margin-top: 10px;
+}
+.m_icons a{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding-top: 5px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+}
+.m_icons a:hover{
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+.m_icons a i{}
+.team_testimonial{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ebebeb;
+}
+/*----team section design end----*/
+
+/*----contact section design start----*/
+.contact_section{
+    background-color: #7690c5;
+}
+.contact_section .container{
+    width: 65%;
+}
+.contact_info{
+    width: 45%;
+    float: left;
+    overflow: hidden;
+    color: #fff;
+}
+.contact_info .com_section_title{
+    color: #fff;
+}
+.contact_info .com_section_title span{
+    color: #fff;
+}
+.con_info_p{
+    margin-bottom: 50px;
+}
+.contact_left{
+    width: 49%;
+    float: left;
+}
+.contact_right{
+    width: 49%;
+    float: right;
+}
+.con_links_div{}
+.con_links_div p{
+    margin-bottom: 40px;
+}
+.con_links_div p:last-child{
+    margin-bottom: 0;
+}
+.con_links_div p i{
+    width: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+.contact_left .con_links_div p:first-child i{
+    font-size: 30px;
+}
+
+.contact_form{
+    width: 45%;
+    float: right;
+}
+.contact_form form{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.contact_form form input,
+.contact_form form textarea{
+    width: 100%;
+    padding: 15px 20px;
+    font-family: BrandonGrotesque-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777777;
+    border: 0;
+    border-radius: 5px;
+}
+.contact_form form input::-webkit-input-placeholder, .contact_form form textarea::-webkit-input-placeholder{
+    color: #bbbbbb;
+}
+.contact_form form input::-moz-placeholder, .contact_form form textarea::-moz-placeholder{
+    color: #bbbbbb;
+}
+.contact_form form input:-ms-input-placeholder, .contact_form form textarea:-ms-input-placeholder{
+    color: #bbbbbb;
+}
+.contact_form form input::-ms-input-placeholder, .contact_form form textarea::-ms-input-placeholder{
+    color: #bbbbbb;
+}
+.contact_form form input::placeholder,
+.contact_form form textarea::placeholder{
+    color: #bbbbbb;
+}
+.contact_form form input:hover,
+.contact_form form textarea:hover{
+    -webkit-box-shadow: 1px 1px 5px #111;
+            box-shadow: 1px 1px 5px #111;
+}
+.contact_form form input:focus,
+.contact_form form textarea:focus{
+    outline: none;
+}
+.f_name{
+    margin-bottom: 25px;
+}
+.f_name input{}
+.f_email{
+    margin-bottom: 25px;
+}
+.f_email input{}
+.f_message{
+    margin-bottom: 25px;
+}
+.f_message textarea{}
+.contact_form form button{
+    padding: 10px 25px;
+    font-family: BrandonGrotesque-Medium;
+    font-weight: 500;
+    font-size: 18px;
+    color: #222;
+    border: 0;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.contact_form form button:hover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 5px #111;
+            box-shadow: inset 0 0 5px #111;
+}
+.contact_form form button:focus{
+    outline: none;
+}
+/*----contact section design end----*/
+
+/*----company logo section design start----*/
+.company_section{
+    padding: 60px 0;
+}
+.company_section .container{
+    width: 50%;
+}
+.envato, .wordpress, .aetuts, .micorlancer{
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+/*    line-height: 60px;*/
+/*    border: 1px solid red;*/
+}
+.micorlancer{
+    margin-right: 0;
+}
+.envato img, .wordpress img, .aetuts img, .micorlancer img{
+    width: 100%;
+/*    vertical-align: middle;*/
+}
+/*----company logo section design end----*/
+
+/*----footer seciton design start----*/
+footer{
+    background-color: #7690c5;
+    text-align: center;
+}
+footer p{
+    padding: 40px 0;
+    border-top: 1px solid #87a0d2;
+    font-family: BrandonGrotesque-Medium;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+/*----footer seciton design end----*/
